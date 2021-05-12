@@ -1,6 +1,6 @@
 # FROM uphy/novnc-alpine
-#FROM ddddv1/nonvcj
-FROM j2
+FROM ddddv1/nonvcj
+#FROM j2
 RUN \
     apk add --no-cache curl openjdk8-jre bash \
     && curl -L https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.4.1.tgz >  /tmp/jmeter.tgz \
