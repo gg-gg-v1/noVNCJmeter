@@ -1255,7 +1255,7 @@ const UI = {
 
     // Apply remote resizing or local scaling
     applyResizeMode() {
-        if (!UI.rfb) return;
+        //if (!UI.rfb) return;
 
         UI.rfb.scaleViewport = UI.getSetting('resize') === 'scale';
         //UI.rfb.resizeSession = UI.getSetting('resize') === 'remote';
