@@ -23,7 +23,7 @@ ADD site-packages/ /usr/lib/python3.9/
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 8080
 
-# Setup environment variables
+# Setup environment variables ~/.fluxbox/init
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 \
