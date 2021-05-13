@@ -19,6 +19,7 @@ RUN \
     apk del git && \
     sed -i -- "s/ps -p/ps -o pid | grep/g" /root/noVNC/utils/launch.sh
 
+# here adding  external site-packages since default python3.9 does not have site-packages
 ADD site-packages/ /usr/lib/python3.9/
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 8080
